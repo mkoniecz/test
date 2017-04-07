@@ -1,0 +1,59 @@
+3. git init w folderze local 
+4.git init --bare w remote
+5. vim Cebula.txt i przepsiujemy    :w zapisuje a :q wychodzi  da sie uzyc po wcisneciu esc
+6.git add 'Cebula.txt'  , git commit -m 'cebulka'
+7.git remote add origin ../remote
+8.git push -u origin master
+9.vim .gitignore a w srodku *.doc
+  git add '.gitignore'
+  git commit -a -m 'ignorowanie.doc'
+  git push origin master
+10.vim smieci.doc wpisujemy tresc  potem :w :q 
+11. git log >> log.txt 
+	 git add 'log.txt'
+	 git commit -a -m 'logi'
+12. git push origin master
+13. jako ze nie umiem inaczej to 
+	vim Cebula.txt zmieniamy slowa i :w :q 
+	git add 'Cebula.txt'
+14. git diff -p origin/master >> roznica.txt
+15. cd ..
+    cd local2
+	git clone ../remote/
+16.cd remote
+	vim Cebula.txt dopisujemy zwrotke :w :q
+17.git add 'Cebula.txt'
+	git commit -m 'druga zwrotka'
+	git push origin master
+18.  cd ..
+		cd ..
+		cd local
+		mozliwe git add 'Cebula.txt'
+		git commit -m 'marchewka'
+19.git branch marchewka
+20.git pull
+	git push
+21.git checkout marchewka 
+    vim Cebula.txt dopisujemy :w :q
+22. git diff -p origin/master >> roznice.txt
+	git add .
+	git commit -m 'urodziny marchewki'
+	git push 
+23. git checkout master
+
+24 . jezeli sie udalo bo nam nie to 
+	vim wyjasnienie.txt i opisac :w :q
+25.git reset --hard druga zwrotka
+26.vim Cebula.txt
+ git add 'Cebula.txt'
+ git commit -m 'trzecia'
+ git push origin master
+27. cd ..
+cd local2/remote 
+vim Cebulka.txt dopisujemy 
+28.
+29.git show >> schowek.txt
+30.. echo "Wis³awa Szymborska " > autor.txt 
+31.git add .
+git commit
+git push
